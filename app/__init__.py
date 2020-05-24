@@ -6,13 +6,13 @@ from flask_migrate import Migrate
 
 
 "This can be changed to your local setup, if you use a different set of variables"
-POSTGRES = {
-    'user': 'postgres',
-    'pw': 'password',
-    'db': 'postgres',
-    'host': 'localhost',
-    'port': '5432',
-}
+#POSTGRES = {
+   # 'user': 'postgres',
+   # 'pw': 'password',
+   # 'db': 'postgres',
+   # 'host': 'localhost',
+   # 'port': '5432',
+#}
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'DATABASE_URL'
