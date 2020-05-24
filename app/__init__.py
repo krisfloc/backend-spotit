@@ -15,7 +15,7 @@ POSTGRES = {
 }
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost:5432/postgres'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'DATABASE_URL'
 
 app.config.from_pyfile('config.py')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
